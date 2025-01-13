@@ -3,8 +3,10 @@
 # Description: Run script which deploys the nextflow workflow
 
 # Input args
-profile=$1 
+profile=$1
 outDir=$2
+# added 3rd variable
+projectID=$3
 
 # housekeeping
 if [[ -z $outDir || -z $profile || -z $projectID ]]; then echo "All variables are required: profile outDir projectID"; exit; fi
